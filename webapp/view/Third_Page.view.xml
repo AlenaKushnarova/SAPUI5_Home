@@ -1,0 +1,46 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="Kus.HomeWork2_3.controller.Third_Page">
+	<App>
+		<pages><Page title="{i18n>ThirdPage}">
+				<content>
+				 <Toolbar width="100%" id="toolbar2">
+			        <content>
+				    <Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="button0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'SecondPage'\}\}\}" text="{i18n>PrButton}"/>
+			        </content>
+			    </Toolbar>
+				 <Table noDataText="Drop column list items here and columns in the area above" id="table0" items="{path: 'Gamer>/Gamers'}">
+
+				     <columns><Column id="column0">
+				             <header>
+				                 <Label id="label0" text="{i18n>Gamer}"/>
+				             </header>
+				         </Column>
+				         <Column id="column1">
+				             <header>
+				                 <Label text="{i18n>Game}" id="label1"/>
+				             </header>
+				         </Column>
+				         <Column id="column2">
+				             <header>
+				                 <Label text="{i18n>Score}" id="label2"/>
+				             </header>
+				         </Column></columns>
+				       <items><ColumnListItem type="Active" id="item0">
+                                    <cells>
+										<Text text="{Gamer>Gamer}"/>
+									</cells>
+									<cells>
+										<Text text="{Gamer>Game}"/>
+									</cells>
+									<cells>
+										<Text text="{Gamer>Score}"/>
+									</cells>
+				         </ColumnListItem>
+				     </items>
+				         </Table>
+
+				
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

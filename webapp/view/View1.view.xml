@@ -1,0 +1,35 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Kus.HomeWork2_3.controller.View1" displayBlock="true">
+		<App id="app">
+			<pages><Page id="page" title="{i18n>title}">
+					<content>
+					 <Toolbar width="100%" id="toolbar1">
+					        <content>
+   						    <Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="{i18n>NButton}" id="button0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'SecondPage'\}\}\}"/>
+   		   		            </content>
+					    </Toolbar>
+   						    <sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
+						        <sap.ui.layout.form:formContainers><sap.ui.layout.form:FormContainer title="{i18n>Label}" id="container0">
+						                <sap.ui.layout.form:formElements><sap.ui.layout.form:FormElement id="element0">
+						                        <sap.ui.layout.form:fields><sap.ui.layout:VerticalLayout xmlns:sap.ui.layout="sap.ui.layout" width="70%" id="layout1">
+						                                <sap.ui.layout:content>
+						                                    <Label text="{i18n>LbGamer}" width="100%" id="label0_1565352131925"/>
+						                                    <Input xmlns="sap.m" id="input1" placeholder="Name" fieldWidth="100%"/>
+						                                    <Label xmlns="sap.m" text="{i18n>LbGameLevel}" width="100%" id="label0"/>
+						                                    <Input xmlns="sap.m" id="input0_1565352318484" placeholder="Level" fieldWidth="100%"/>
+						                                    <Label width="100%" id="label1" text="{i18n>LbScore}"/>
+						                                    <Input xmlns="sap.m" width="100%" id="input0" fieldWidth="100%" placeholder="Score"/>
+						                                </sap.ui.layout:content>
+						                            </sap.ui.layout:VerticalLayout>
+						                        </sap.ui.layout.form:fields>
+						                    </sap.ui.layout.form:FormElement>
+						                </sap.ui.layout.form:formElements>
+						            </sap.ui.layout.form:FormContainer>
+						        </sap.ui.layout.form:formContainers>
+					        <sap.ui.layout.form:layout>
+					            <sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+					        </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
+					</content>
+				</Page>
+			</pages>
+		</App>
+</mvc:View>

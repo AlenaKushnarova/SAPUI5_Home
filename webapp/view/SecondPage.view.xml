@@ -1,0 +1,54 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="Kus.HomeWork2_3.controller.SecondPage">
+	<App>
+		<pages><Page title="{i18n>SecondPage}">
+				<content>
+			 <Toolbar width="100%" id="toolbar2">
+					        <content>
+				            <Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="{i18n>PrButton}" id="button0_1565771103747" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'View1'\}\}\}"/>
+					            <ToolbarSpacer id="spacer0"/>
+             	           <Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="button0_1565767291571" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Third_Page'\}\}\}" text="{i18n>NButton}"/>
+					        </content>
+					    </Toolbar><sap.ui.layout:VerticalLayout xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="layout0">
+				        <sap.ui.layout:content>
+				
+				            <CheckBox xmlns="sap.m" text="I accept" selected="false" id="box0"/>
+				            <RatingIndicator xmlns="sap.m" maxValue="5" value="3" id="indicator0"/>
+				            <Label text="Sex" width="100%" id="label0"/>
+				            <Select xmlns="sap.m" id="select0">
+				        <items>
+				            <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Female" id="item38"/>
+				            <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Male" id="item39"/>
+				            </items>
+				        
+				    </Select>
+				            <Label text="Level" width="100%" id="label0_1565355521147"/>
+				            <ComboBox xmlns="sap.m" id="box1">
+				        <items>
+				            <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Advanced" id="item0"/>
+				            <SegmentedButtonItem id="item36"/>
+				            <SegmentedButtonItem id="item28"/>
+				            <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Medium" id="item1"/>
+				            </items>
+				        
+				    </ComboBox>
+				            <Label text="Date" width="100%" id="label0_1565355909777"/>
+				            <DatePicker xmlns="sap.m" id="picker0" width="50%"/>
+				            <RadioButton xmlns="sap.m" groupName="GroupA" text="User game" id="button0"/>
+				            <Label text="Enter your text here" width="100%" id="label1"/>
+				            <TextArea xmlns="sap.m" value="Lorem ipsum dolor" rows="4" id="area0"/>
+				            <RadioButtonGroup xmlns="sap.m" columns="1" id="group0">
+				                <buttons>
+				                    <RadioButton text="I agree" id="button0_1565356512761"/>
+				                    <RadioButton text="I not agree" id="button1_1565356512761"/>
+				                    </buttons>
+				                
+				            </RadioButtonGroup>
+				            <RadioButton text="Option One" id="button1"/><FeedInput id="input0"/>
+				        </sap.ui.layout:content>
+				    </sap.ui.layout:VerticalLayout>
+
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
